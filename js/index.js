@@ -92,3 +92,27 @@ contactP[2].textContent= siteContent['contact']['email'];
 
 //footer
 footerP.textContent = siteContent['footer']['copyright'];
+
+
+//color green
+anchorEl[0].style.color = 'green';
+anchorEl[1].style.color = 'green';
+anchorEl[2].style.color = 'green';
+anchorEl[3].style.color = 'green';
+anchorEl[4].style.color = 'green';
+anchorEl[5].style.color = 'green';
+
+//append
+const contactNewP =  document.createElement("p");
+contactNewP.textContent = "www.greatideas.com"
+const  editContact = document.querySelector('.contact');
+editContact.append(contactNewP);
+
+//prepend
+const footerNewA = document.createElement('a');
+footerNewA.textContent = "Click here to go back to the top";
+footerNewA.setAttribute('href', '#logo-img');
+footerNewA.style.textDecoration = "none";
+footerNewA.style.color = "black";
+const footer = document.querySelector('footer');
+footer.prepend(footerNewA);
